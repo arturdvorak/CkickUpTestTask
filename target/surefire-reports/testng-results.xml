@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-12-18T12:30:59 EST" name="Surefire suite" finished-at="2020-12-18T12:31:13 EST" duration-ms="14041">
+    <groups>
+    </groups>
+    <test started-at="2020-12-18T12:30:59 EST" name="Surefire test" finished-at="2020-12-18T12:31:13 EST" duration-ms="14041">
+      <class name="ButtonTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ButtonTest@13c10b87]" started-at="2020-12-18T12:30:59 EST" name="setUp" description="Initializing browser" finished-at="2020-12-18T12:31:03 EST" duration-ms="4219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickClickMeButton()[pri:0, instance:ButtonTest@13c10b87]" started-at="2020-12-18T12:31:03 EST" name="clickClickMeButton" description="TDB" finished-at="2020-12-18T12:31:04 EST" duration-ms="1034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickClickMeButton -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ButtonTest@13c10b87]" started-at="2020-12-18T12:31:04 EST" name="closeDriver" description="Closing browser" finished-at="2020-12-18T12:31:13 EST" duration-ms="8735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- ButtonTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

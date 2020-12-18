@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class ClickUpTestPage {
     private WebDriver driver;
@@ -28,9 +29,8 @@ public class ClickUpTestPage {
     }
 
     public void verifyThatButtonIsClicked () {
-        assertEquals(driver.findElement(BUTTON_CLICKME_TRIGGERED), true,
-                "'ClickMe' button is triggered");
+        assertTrue(driver.findElement(BUTTON_CLICKME_TRIGGERED).isDisplayed(), "'ClickMe' button is not triggered");
         assertEquals(driver.findElement(P_EVENT_TRIGGERED).getText(), "Event Triggered",
-                "'Event Triggered' text appears");
+                "'Event Triggered' text doesn't appear");
     }
 }

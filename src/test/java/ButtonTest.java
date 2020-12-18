@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class ButtonTest {
     private WebDriver driver;
-    ClickUpTestPage clickUpTestPage;
+    private ClickUpTestPage clickUpTestPage;
 
     @BeforeClass(description = "Initializing browser")
     public void setUp() {
@@ -24,10 +24,10 @@ public class ButtonTest {
         clickUpTestPage.verifyThatButtonIsClicked();
     }
 
-/*    @AfterClass(description = "Closing browser")
+    @AfterClass(description = "Closing browser")
     public void closeDriver() {
         if (driver != null) {
             driver.quit();
         }
-    }*/
+    }
 }

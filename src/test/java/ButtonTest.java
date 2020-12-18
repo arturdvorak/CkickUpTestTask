@@ -17,16 +17,17 @@ public class ButtonTest {
         clickUpTestPage = new ClickUpTestPage(driver);
     }
 
-    @Test(description = "Open test page and check Click Me button")
-    public void clickClickMeButton() {
+    @Test(description = "Open test page, click 'ClickMe' button and verify that event is triggered")
+    public void clickClickMeButtonTest() {
         clickUpTestPage.openPage();
         clickUpTestPage.clickClickMeButton();
+        clickUpTestPage.verifyThatButtonIsClicked();
     }
 
-    @AfterClass(description = "Closing browser")
+/*    @AfterClass(description = "Closing browser")
     public void closeDriver() {
         if (driver != null) {
             driver.quit();
         }
-    }
+    }*/
 }

@@ -17,7 +17,7 @@ public class ButtonTest {
         clickUpTestPage = new ClickUpTestPage(driver);
     }
 
-    @Test(description = "TDB")
+    @Test(description = "Open test page and check Click Me button")
     public void clickClickMeButton() {
         clickUpTestPage.openPage();
         clickUpTestPage.clickClickMeButton();

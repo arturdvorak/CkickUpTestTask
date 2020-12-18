@@ -22,8 +22,8 @@ public class ClickUpTestPage {
     }
 
     public void clickClickMeButton () {
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@id='growbutton'][contains(@showgrow, 'transform: scale(4)')]")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='styled-click-button showgrow grown']")));
         driver.findElement(BUTTON_CLICK_ME).click();
-        assertEquals(driver.findElement(P_EVENT_TRIGGERED).getText(), "Event Triggered");
+        assertEquals(driver.findElement(P_EVENT_TRIGGERED).getText(), "Event Triggered", "'Click Me' button is clicked and 'Event Triggered' text appears");
     }
 }

@@ -29,7 +29,7 @@ public class ClickUpTestPage {
     }
 
     public void verifyThatButtonIsClicked () {
-        assertTrue(driver.findElement(BUTTON_CLICKME_TRIGGERED).isDisplayed(), "'ClickMe' button is not triggered");
+        assertTrue(driver.findElement(BUTTON_CLICKME_TRIGGERED).isDisplayed(), "'ClickMe' button is not clicked");
         assertEquals(driver.findElement(P_EVENT_TRIGGERED).getText(), "Event Triggered",
                 "'Event Triggered' text doesn't appear");
     }

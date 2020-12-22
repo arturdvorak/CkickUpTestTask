@@ -1,8 +1,8 @@
 # Default ignored files
 /shelf/
-/.idea/workspace.xml
 .idea/*
 target/
 *.properties
 *.iml
 *.iws
+debug.log
